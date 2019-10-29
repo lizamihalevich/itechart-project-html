@@ -3,14 +3,60 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./style.scss">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.scss">
 </head>
 
 <body>
-    <div>
-        <h1>hello</h1>
-    </div>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo__logo-image" src="images/askit-logo.png" />
+        </div>
+        <nav class="header__nav-panel">
+            <ul class="header__nav-panel__menu">
+                <li class="header__nav-panel__menu__item"><a href="#">Home</a></li>
+                <li class="header__nav-panel__menu__item"><a href="#">How it works</a></li>
+                <li class="header__nav-panel__menu__item"><a href="#">Features</a></li>
+                <li class="header__nav-panel__menu__item"><a href="#">Partners</a></li>
+                <li class="header__nav-panel__menu__item"><a href="#">Events</a></li>
+                <li class="header__nav-panel__menu__item"><a href="#">About us</a></li>
+                <div class="header__nav-panel__log-in">
+                    <img src="images/menu-sign-in.png" />
+                    <p>Log in</p>
+                </div>
+                <div class="header__nav-panel__register">
+                    <img src="images/menu-avatar.png" />
+                    <p>Register</p>
+                </div>
+            </ul>
 
+
+        </nav>
+    </header>
+    <section class="heading-section">
+        <div class="heading-section__summary">
+            <h1 class="heading-section__summary__header">Live Interaction From Audience</h1>
+            <div class="heading-section__borderline">
+                <div class="heading-section__borderline--small"></div>
+                <div class="heading-section__borderline--middle"></div>
+                <div class="heading-section__borderline--big"></div>
+            </div>
+            <p class="heading-section__summary__text">Q&A, Polls and Slide-sharing for Events</p>
+
+            <div class="heading-section__list-of-buttons">
+                <button class="heading-section__btn">Create an event</button>
+                <div class="heading-section__list-of-buttons__merged">
+                    <button class="heading-section__btn">Join event</button>
+                    <button class="heading-section__btn">type code</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="heading-section__iphone-image">
+            <img class="heading-section__iphone-image__image" src="images/first-section-iphone.png" />
+        </div>
+    </section>
 </body>
 
 </html>
