@@ -5,16 +5,16 @@
 @import "./header-register.scss";
 .header {
     display: flex;
-    padding: 0 290px;
+    padding: 0 212px;
     background-color: #121111;
     @include mobile {
-        position: relative;
+        position: relative; //TODO: delete
     }
     @include tablet {
         padding: 0 170px;
     }
     &__logo {
-        margin: 0px 34px;
+        margin: 0px 45px;
         @include mobile {
             margin: auto;
         }
@@ -29,7 +29,8 @@
         }
     }
     &__log-in {
-        margin-right: 80px;
+        cursor: pointer;
+        margin-right: 52px;
         @include mobile {
             display: none;
         }
@@ -37,22 +38,17 @@
             margin-right: 33px;
         }
     }
-    &__log-in:hover {
-        cursor: pointer;
-    }
     &__register {
+        cursor: pointer;
         @include mobile {
             display: none;
         }
-    }
-    &__register:hover {
-        cursor: pointer;
     }
     &__menu-burger {
         display: none;
         @include mobile {
             position: absolute;
-            top: 32%;
+            top: 32%; //TODO: pixels
             right: 7%;
             display: block;
         }

@@ -1,8 +1,7 @@
 .live-interaction-btns-list {
     display: flex;
-    justify-content: center;
     &__btn {
-        padding: 0.6em 0.7em;
+        padding: 13px 17px; //TODO: pixels
         color: white;
         border: 1px solid white;
         background-color: transparent;

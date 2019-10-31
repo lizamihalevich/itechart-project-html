@@ -2,84 +2,31 @@
 @import "./live-interaction-phone.scss";
 @import "./live-interaction-summary.scss";
 .live-interaction {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 0 203px;
+    align-items: center;
     overflow-x: hidden;
     background: url("../images/first-section-background.jpg") no-repeat top center;
     background-size: cover;
     &__summary {
-        width: 50%;
-        margin: 0 260px;
-        padding: 362px 0px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        margin: 295px 0px 290px;
         @include mobile {
             width: 100%;
             margin: auto;
-            padding: 193px 0px 90px 0;
+            padding: 193px 0 90px 0;
         }
         @include tablet {
             margin: 0px 173px;
             padding: 232px 0px;
         }
     }
-    &__borderline {
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 24px;
-        @include mobile {
-            margin-top: 10px;
-        }
-        @include tablet {
-            margin-top: 12px;
-        }
-    }
-    &__borderline--small {
-        width: 10px;
-        height: 10px;
-        margin-right: 22px;
-        border-radius: 50%;
-        background-color: white;
-        @include mobile {
-            height: 8px;
-            margin-right: 14px;
-        }
-        @include tablet {
-            width: 9px;
-            height: 8px;
-        }
-    }
-    &__borderline--middle {
-        width: 19px;
-        height: 10px;
-        margin-right: 11px;
-        border-radius: 5px;
-        background-color: white;
-        @include mobile {
-            width: 16px;
-            height: 8px;
-            margin-right: 11px;
-        }
-        @include tablet {
-            width: 15px;
-            height: 8px;
-            margin-right: 8px;
-        }
-    }
-    &__borderline--big {
-        width: 345px;
-        height: 10px;
-        border-radius: 5px;
-        background-color: white;
-        @include mobile {
-            width: 232px;
-            height: 8px;
-            margin-right: 9%;
-        }
-        @include tablet {
-            width: 218px;
-            height: 8px;
-        }
-    }
     &__btns-list {
-        margin-top: 250px;
+        margin-top: 206px;
+        margin-left: 212px;
         @include mobile {
             margin-top: 90px;
         }
@@ -88,10 +35,9 @@
         }
     }
     &__phone {
-        position: absolute;
-        right: 273px;
-        bottom: 0;
-        display: block;
+        display: flex;
+        flex-shrink: 0;
+        margin-top: 272px;
         @include mobile {
             display: none;
         }
