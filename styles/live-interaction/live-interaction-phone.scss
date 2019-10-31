@@ -1,0 +1,8 @@
+.live-interaction-phone {
+    &__image {
+        width: $phone-image-desktop-size;
+        @include tablet {
+            width: $phone-image-tablet-size;
+        }
+    }
+}

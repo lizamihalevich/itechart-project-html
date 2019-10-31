@@ -1,0 +1,27 @@
+.live-interaction-summary {
+    text-align: center;
+    color: white;
+    font-family: "Lato";
+    &__header {
+        font-size: $main-header-font-size-desktop;
+        font-weight: 600;
+        @include mobile {
+            font-size: $main-header-font-size-mobile;
+        }
+        @include tablet {
+            font-size: $main-header-font-size-tablet;
+        }
+    }
+    &__text {
+        margin-top: 48px;
+        font-size: $heading-text-font-size-desktop;
+        @include mobile {
+            margin-top: 26px;
+            font-size: $heading-text-font-size-mobile;
+        }
+        @include tablet {
+            margin-top: 30px;
+            font-size: $heading-text-font-size-tablet;
+        }
+    }
+}

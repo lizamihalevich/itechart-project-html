@@ -1,0 +1,25 @@
+.live-interaction-btns-list {
+    display: flex;
+    justify-content: center;
+    &__btn {
+        padding: 0.6em 0.7em;
+        color: white;
+        border: 1px solid white;
+        background-color: transparent;
+        font-size: $header-btn-font-size-desktop;
+        @include mobile {
+            font-size: $header-btn-font-size-mobile;
+        }
+        @include tablet {
+            font-size: $header-btn-font-size-tablet;
+        }
+    }
+    &__btn:hover {
+        color: #318da4;
+        background-color: #e8e9ea;
+    }
+    &__merged {
+        display: flex;
+        margin-left: 55px;
+    }
+}

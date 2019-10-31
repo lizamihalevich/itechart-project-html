@@ -1,0 +1,60 @@
+@import "./header-burger-menu.scss";
+@import "./header-log-in.scss";
+@import "./header-logo.scss";
+@import "./header-navigation.scss";
+@import "./header-register.scss";
+.header {
+    display: flex;
+    padding: 0 290px;
+    background-color: #121111;
+    @include mobile {
+        position: relative;
+    }
+    @include tablet {
+        padding: 0 170px;
+    }
+    &__logo {
+        margin: 0px 34px;
+        @include mobile {
+            margin: auto;
+        }
+        @include tablet {
+            display: none;
+        }
+    }
+    &__nav-panel {
+        display: block;
+        @include mobile {
+            display: none;
+        }
+    }
+    &__log-in {
+        margin-right: 80px;
+        @include mobile {
+            display: none;
+        }
+        @include tablet {
+            margin-right: 33px;
+        }
+    }
+    &__log-in:hover {
+        cursor: pointer;
+    }
+    &__register {
+        @include mobile {
+            display: none;
+        }
+    }
+    &__register:hover {
+        cursor: pointer;
+    }
+    &__menu-burger {
+        display: none;
+        @include mobile {
+            position: absolute;
+            top: 32%;
+            right: 7%;
+            display: block;
+        }
+    }
+}
