@@ -1,28 +1,31 @@
 .live-interaction-summary {
     color: white;
-    font-family: $header-item-font-family;
+    font-family: $menu-item-font-family;
     &__header {
         font-size: $main-header-font-size-desktop;
         font-weight: 600;
         margin-left: 25px;
-        @include mobile {
-            font-size: $main-header-font-size-mobile;
-        }
-        @include tablet {
+        @include mediaScreenMaxWidth($tablet-width) {
             font-size: $main-header-font-size-tablet;
+            margin-left: 10px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin: auto;
+            font-size: $main-header-font-size-mobile;
         }
     }
     &__text {
         margin-top: 32px;
         margin-left: 112px;
         font-size: $heading-text-font-size-desktop;
-        @include mobile {
-            margin-top: 26px;
-            font-size: $heading-text-font-size-mobile;
-        }
-        @include tablet {
+        @include mediaScreenMaxWidth($tablet-width) {
             margin-top: 30px;
             font-size: $heading-text-font-size-tablet;
+            margin-left: 86px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin: 23px auto;
+            font-size: $heading-text-font-size-mobile;
         }
     }
     &__borderline {
@@ -30,11 +33,12 @@
         justify-content: flex-end;
         margin-top: 16px;
         margin-right: 88px;
-        @include mobile {
-            margin-top: 10px;
-        }
-        @include tablet {
+        @include mediaScreenMaxWidth($tablet-width) {
             margin-top: 12px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-top: 5px;
+            margin-right: 65px;
         }
     }
     &__borderline-small {
@@ -43,13 +47,13 @@
         margin-right: 22px;
         border-radius: 50%;
         background-color: white;
-        @include mobile {
-            height: 8px;
-            margin-right: 14px;
-        }
-        @include tablet {
+        @include mediaScreenMaxWidth($tablet-width) {
             width: 9px;
             height: 8px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            height: 6px;
+            margin-right: 14px;
         }
     }
     &__borderline-middle {
@@ -58,15 +62,15 @@
         margin-right: 11px;
         border-radius: 5px;
         background-color: white;
-        @include mobile {
-            width: 16px;
-            height: 8px;
-            margin-right: 11px;
-        }
-        @include tablet {
+        @include mediaScreenMaxWidth($tablet-width) {
             width: 15px;
             height: 8px;
             margin-right: 8px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            width: 16px;
+            height: 6px;
+            margin-right: 11px;
         }
     }
     &__borderline-big {
@@ -74,14 +78,13 @@
         height: 10px;
         border-radius: 5px;
         background-color: white;
-        @include mobile {
-            width: 232px;
-            height: 8px;
-            margin-right: 9%;
-        }
-        @include tablet {
+        @include mediaScreenMaxWidth($tablet-width) {
             width: 218px;
             height: 8px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            width: 176px;
+            height: 6px;
         }
     }
 }

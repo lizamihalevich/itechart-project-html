@@ -1,6 +1,7 @@
 @import "./live-interaction-events.scss";
 @import "./live-interaction-phone.scss";
 @import "./live-interaction-summary.scss";
+@import '../mixins.scss';
 .live-interaction {
     display: flex;
     justify-content: center;
@@ -9,40 +10,46 @@
     overflow-x: hidden;
     background: url("../images/first-section-background.jpg") no-repeat top center;
     background-size: cover;
+    @include mediaScreenMaxWidth($tablet-width) {
+        padding: 0px 170px;
+    }
+    @include mediaScreenMaxWidth($mobile-width) {
+        padding: 0;
+    }
     &__summary {
         display: flex;
         flex-direction: column;
         flex-grow: 1;
         margin: 295px 0px 290px;
-        @include mobile {
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin: 232px 0px 230px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
             width: 100%;
             margin: auto;
-            padding: 193px 0 90px 0;
-        }
-        @include tablet {
-            margin: 0px 173px;
-            padding: 232px 0px;
+            padding: 150px 0 26px 0;
         }
     }
     &__btns-list {
         margin-top: 206px;
         margin-left: 212px;
-        @include mobile {
-            margin-top: 90px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-top: 165px;
+            margin-left: 166px;
         }
-        @include tablet {
-            margin-top: 163px;
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin: 45px auto;
         }
     }
     &__phone {
         display: flex;
         flex-shrink: 0;
         margin-top: 272px;
-        @include mobile {
-            display: none;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-top: 218px;
         }
-        @include tablet {
-            right: 170px;
+        @include mediaScreenMaxWidth($mobile-width) {
+            display: none;
         }
     }
 }

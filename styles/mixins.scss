@@ -1,17 +1,11 @@
-@mixin mobile {
-    @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+@mixin mediaScreenMaxWidth($screen-width) {
+    @media only screen and (max-width: #{$screen-width}) {
         @content;
     }
 }
 
-@mixin tablet {
-    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
-        @content;
-    }
-}
-
-@mixin desktop {
-    @media (min-width: #{$desktop-width}) {
+@mixin mediaScreenMinWidth($screen-width) {
+    @media only screen and (min-width: #{$screen-width}) {
         @content;
     }
 }

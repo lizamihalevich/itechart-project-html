@@ -4,10 +4,10 @@
         display: flex;
         height: 100%;
         margin-left: 95px;
-        @include tablet {
+        @include mediaScreenMaxWidth($tablet-width) {
             height: initial;
-            margin-right: 50px;
-            margin-left: 250px;
+            margin: 0;
+            justify-content: flex-end;
         }
     }
     &__menu-item {
@@ -18,8 +18,8 @@
         color: #fff;
         font-family: $menu-item-font-family;
         font-size: $menu-item-desktop-font-size;
-        @include tablet {
-            padding: 54px 15px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            padding: 54px 12px;
             font-size: $menu-item-tablet-font-size;
         }
     }
