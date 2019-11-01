@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.scss">
 </head>
 
@@ -23,14 +23,17 @@
                 <li class="header-nav-panel__menu-item"><a href="#">About us</a></li>
             </ul>
         </nav>
-        <div class="header__log-in header-log-in">
-            <img class="header-log-in__image" src="images/menu-sign-in.png" />
-            <p>Log in</p>
+        <div class="header__authentication header-authentication">
+            <div class="header-authentication__log-in header-log-in">
+                <img class="header-log-in__image" src="images/menu-sign-in.png" />
+                <p>Log in</p>
+            </div>
+            <div class="header-authentication__register header-register">
+                <img class="header-register__image" src="images/menu-avatar.png" />
+                <p>Register</p>
+            </div>
         </div>
-        <div class="header__register header-register">
-            <img class="header-register__image" src="images/menu-avatar.png" />
-            <p>Register</p>
-        </div>
+
         <div class="header__menu-burger header-menu-burger">
             <img class="header-menu-burger__image" src="images/mobile-burger-menu.png" />
         </div>
@@ -68,19 +71,19 @@
         <div class="how-it-works__instruction how-it-works-instruction">
             <div class="how-it-works-instruction__item how-it-works-instruction-item">
                 <img class="how-it-works-instruction-item__image" src="images/create-free-account.png" />
-                <p>Create a FREE account with us</p>
+                <p class="how-it-works-instruction-item__text">Create a FREE account with us</p>
             </div>
             <div class="how-it-works-instruction__item how-it-works-instruction-item">
                 <img class="how-it-works-instruction-item__image" src="images/create-own-event.png" />
-                <p>Create your own event or Q&A session</p>
+                <p class="how-it-works-instruction-item__text">Create your own event or Q&A session</p>
             </div>
             <div class="how-it-works-instruction__item how-it-works-instruction-item">
                 <img class="how-it-works-instruction-item__image" src="images/share-your-meeting.png" />
-                <p>Share your meeting code with the participants</p>
+                <p class="how-it-works-instruction-item__text">Share your meeting code with the participants</p>
             </div>
             <div class="how-it-works-instruction__item how-it-works-instruction-item">
                 <img class="how-it-works-instruction-item__image" src="images/run-your-meeting.png" />
-                <p>Run your meeting successfully</p>
+                <p class="how-it-works-instruction-item__text">Run your meeting successfully</p>
             </div>
         </div>
     </section>

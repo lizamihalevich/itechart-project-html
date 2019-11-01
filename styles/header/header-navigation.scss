@@ -1,9 +1,14 @@
 .header-nav-panel {
-    width: 100%;
+    @include mediaScreenMaxWidth($tablet-width) {
+        width: 76%;
+    }
+    @include mediaScreenMaxWidth(975px) {
+        width: initial;
+    }
     &__menu {
         display: flex;
         height: 100%;
-        margin-left: 95px;
+        margin-left: 128px;
         @include mediaScreenMaxWidth($tablet-width) {
             height: initial;
             margin: 0;
@@ -16,11 +21,14 @@
         height: 100%;
         padding: 0px 20px;
         color: #fff;
-        font-family: $menu-item-font-family;
+        font-family: $main-font-family;
         font-size: $menu-item-desktop-font-size;
         @include mediaScreenMaxWidth($tablet-width) {
             padding: 54px 12px;
             font-size: $menu-item-tablet-font-size;
+        }
+        @include mediaScreenMaxWidth(975px) {
+            padding: 54px 4px;
         }
     }
     &__menu-item:hover {
