@@ -4,10 +4,12 @@
     &__header {
         font-size: $main-header-font-size-desktop;
         font-weight: 600;
-        margin-left: 25px;
         @include mediaScreenMaxWidth($tablet-width) {
             font-size: $main-header-font-size-tablet;
             margin-left: 10px;
+        }
+        @include mediaScreenMaxWidth(1180px) {
+            font-size: 45px;
         }
         @include mediaScreenMaxWidth($mobile-width) {
             margin: auto;
@@ -16,12 +18,10 @@
     }
     &__text {
         margin-top: 32px;
-        margin-left: 112px;
         font-size: $heading-text-font-size-desktop;
         @include mediaScreenMaxWidth($tablet-width) {
             margin-top: 30px;
             font-size: $heading-text-font-size-tablet;
-            margin-left: 86px;
         }
         @include mediaScreenMaxWidth($mobile-width) {
             margin: 23px auto;
@@ -30,15 +30,19 @@
     }
     &__borderline {
         display: flex;
-        justify-content: flex-end;
         margin-top: 16px;
-        margin-right: 88px;
+        margin-left: 600px;
         @include mediaScreenMaxWidth($tablet-width) {
             margin-top: 12px;
+            margin-left: 480px;
+        }
+        @include mediaScreenMaxWidth(1180px) {
+            margin: 15px 30px 0 0;
+            align-self: flex-end;
         }
         @include mediaScreenMaxWidth($mobile-width) {
             margin-top: 5px;
-            margin-right: 65px;
+            margin-right: 90px;
         }
     }
     &__borderline-small {
@@ -85,6 +89,15 @@
         @include mediaScreenMaxWidth($mobile-width) {
             width: 176px;
             height: 6px;
+        }
+    }
+    &__btns-list {
+        margin-top: 206px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-top: 165px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin: 45px auto;
         }
     }
 }

@@ -1,7 +1,7 @@
-.live-interaction-btns-list {
+.live-interaction-summary-btns-list {
     display: flex;
     &__btn {
-        padding: 13px 17px;
+        padding: 17px 17px;
         color: white;
         border: 1px solid white;
         background-color: transparent;
@@ -14,10 +14,10 @@
             padding: 15px 17px;
             font-size: $header-btn-font-size-mobile;
         }
-    }
-    &__btn:hover {
-        color: #318da4;
-        background-color: #e8e9ea;
+        &:hover {
+            color: #318da4;
+            background-color: #e8e9ea;
+        }
     }
     &__merged {
         display: flex;

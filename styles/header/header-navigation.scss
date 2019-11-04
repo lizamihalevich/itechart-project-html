@@ -1,7 +1,4 @@
 .header-nav-panel {
-    @include mediaScreenMaxWidth($tablet-width) {
-        width: 76%;
-    }
     @include mediaScreenMaxWidth(975px) {
         width: initial;
     }

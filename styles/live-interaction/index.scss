@@ -4,23 +4,20 @@
 @import '../mixins.scss';
 .live-interaction {
     display: flex;
-    justify-content: center;
-    padding: 0 203px;
     align-items: center;
     overflow-x: hidden;
     background: url("../images/first-section-background.jpg") no-repeat top center;
     background-size: cover;
-    @include mediaScreenMaxWidth($tablet-width) {
-        padding: 0px 170px;
-    }
     @include mediaScreenMaxWidth($mobile-width) {
         padding: 0;
     }
     &__summary {
         display: flex;
         flex-direction: column;
+        align-items: center;
         flex-grow: 1;
-        margin: 295px 0px 290px;
+        width: 60%;
+        justify-content: flex-end;
         @include mediaScreenMaxWidth($tablet-width) {
             margin: 232px 0px 230px;
         }
@@ -30,21 +27,15 @@
             padding: 150px 0 26px 0;
         }
     }
-    &__btns-list {
-        margin-top: 206px;
-        margin-left: 212px;
-        @include mediaScreenMaxWidth($tablet-width) {
-            margin-top: 165px;
-            margin-left: 166px;
-        }
-        @include mediaScreenMaxWidth($mobile-width) {
-            margin: 45px auto;
-        }
-    }
     &__phone {
         display: flex;
         flex-shrink: 0;
+        flex-grow: 1;
+        width: 30%;
         margin-top: 272px;
+        @include mediaScreenMaxWidth(1180px) {
+            width: inherit;
+        }
         @include mediaScreenMaxWidth($tablet-width) {
             margin-top: 218px;
         }
