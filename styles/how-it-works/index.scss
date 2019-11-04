@@ -1,10 +1,12 @@
 @import "./how-it-works-header.scss";
 @import "./how-it-works-instruction.scss";
+@import "./how-it-works-instruction-item.scss";
 .how-it-works {
     &__header {
         margin-top: 116px;
     }
     &__instruction {
-        margin-top: 116px;
+        margin-top: 100px;
+        margin-bottom: 120px;
     }
 }

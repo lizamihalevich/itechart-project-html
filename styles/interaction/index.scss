@@ -1,0 +1,11 @@
+@import "./interaction-icons.scss";
+@import "./interaction-small-panel.scss";
+@import "./interaction-summary.scss";
+.interaction {
+    background-color: $main-theme-color;
+    display: flex;
+    color: white;
+    &__small-panel {
+        width: 27%;
+    }
+}

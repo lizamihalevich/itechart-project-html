@@ -27,11 +27,11 @@
         @include mediaScreenMaxWidth(975px) {
             padding: 54px 4px;
         }
-    }
-    &__menu-item:hover {
-        box-sizing: border-box;
-        border-top: 2px solid white;
-        background-color: #161515;
-        font-weight: 600;
+        &:hover {
+            box-sizing: border-box;
+            border-top: 2px solid white;
+            background-color: #161515;
+            font-weight: 600;
+        }
     }
 }

@@ -21,6 +21,9 @@
         @include mediaScreenMaxWidth($tablet-width) {
             margin: 232px 0px 230px;
         }
+        @include mediaScreenMaxWidth (1180px) {
+            margin: 232px 0px 135px;
+        }
         @include mediaScreenMaxWidth($mobile-width) {
             width: 100%;
             margin: auto;
