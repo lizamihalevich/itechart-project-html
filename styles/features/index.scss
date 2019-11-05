@@ -1,0 +1,10 @@
+@import "./features-header.scss";
+@import "./features-list.scss";
+.features {
+    &__header {
+        margin-top: 90px;
+    }
+    &__list {
+        margin-top: 45px;
+    }
+}

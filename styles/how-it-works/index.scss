@@ -4,9 +4,16 @@
 .how-it-works {
     &__header {
         margin-top: 116px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-top: 34px;
+        }
     }
     &__instruction {
         margin-top: 100px;
         margin-bottom: 120px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-top: 45px;
+            margin-bottom: 45px;
+        }
     }
 }

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 16%;
+    width: 250px;
     text-align: center;
     &__image {
         width: 136px;
@@ -10,11 +10,19 @@
         border: 1px solid #037693;
         padding: 30px;
         box-sizing: border-box;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 100px;
+            height: 100px;
+        }
     }
     &__text {
         font-family: $main-font-family;
         font-size: 30px;
         margin-top: 50px;
         color: $main-theme-color;
+        @include mediaScreenMaxWidth($tablet-width) {
+            font-size: 22px;
+            margin-top: 40px;
+        }
     }
 }

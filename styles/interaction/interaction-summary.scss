@@ -1,0 +1,37 @@
+.interaction-summary {
+    &__header {
+        margin-top: 35px;
+    }
+    &__paragraph {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 45px;
+    }
+}
+
+.interaction-summary-header {
+    &__main-text {
+        color: #ffffff;
+        width: 470px;
+        font-size: 83px;
+        font-weight: 700;
+    }
+    &__additional-info {
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+}
+
+.interaction-summary-header-additional-info {
+    display: flex;
+    align-items: flex-end;
+    &__text {
+        color: #ffffff;
+        font-size: 35px;
+    }
+    &__line {
+        width: 320px;
+        height: 2px;
+        background-color: #ffffff;
+    }
+}

@@ -1,4 +1,4 @@
-.how-it-works-header {
+.features-header {
     text-align: center;
     color: $main-theme-color;
     font-family: $main-font-family;
@@ -6,16 +6,13 @@
     &__text {
         font-size: 66px;
         letter-spacing: 4px;
-        @include mediaScreenMaxWidth($tablet-width) {
-            font-size: 56px;
-        }
     }
     &__borderline {
         margin-top: 12px;
     }
 }
 
-.how-it-works-borderline {
+.features-borderline {
     display: flex;
     justify-content: center;
     &__long {
@@ -30,6 +27,6 @@
         height: 6px;
         border-radius: 5px;
         background-color: $main-theme-color;
-        margin-right: 275px;
+        margin-right: 140px;
     }
 }
