@@ -4,6 +4,9 @@
         @include mediaScreenMaxWidth($tablet-width) {
             margin-top: 155px;
         }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-top: 35px;
+        }
     }
     &__paragraph {
         font-size: 20px;
@@ -14,7 +17,21 @@
             line-height: 35px;
             width: 70%;
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 0px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            width: initial;
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 0;
+        }
+    }
+    &__paragraph-second {
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-bottom: 120px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-bottom: 22px;
         }
     }
     @include mediaScreenMaxWidth($tablet-width) {
@@ -35,12 +52,19 @@
             font-size: 45px;
             text-align: center;
         }
+        @include mediaScreenMaxWidth($mobile-width) {
+            font-size: 20px;
+        }
     }
     &__additional-info {
         margin-top: 20px;
         margin-bottom: 60px;
         @include mediaScreenMaxWidth($tablet-width) {
             margin-top: 40px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-top: 12px;
+            margin-bottom: 12px;
         }
     }
 }
@@ -54,6 +78,9 @@
         @include mediaScreenMaxWidth($tablet-width) {
             font-size: 45px;
         }
+        @include mediaScreenMaxWidth($mobile-width) {
+            font-size: 15px;
+        }
     }
     &__line {
         width: 320px;
@@ -61,6 +88,10 @@
         background-color: #ffffff;
         @include mediaScreenMaxWidth($tablet-width) {
             margin-top: 20px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            width: 100px;
+            margin-top: 5px;
         }
     }
     @include mediaScreenMaxWidth($tablet-width) {

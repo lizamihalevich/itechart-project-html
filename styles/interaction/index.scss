@@ -9,7 +9,7 @@
     &__summary {
         width: 40%;
         @include mediaScreenMaxWidth($tablet-width) {
-            width: 80%;
+            width: 78%;
         }
     }
     &__icons {
@@ -20,5 +20,13 @@
         @include mediaScreenMaxWidth(1200px) {
             width: 40%;
         }
+        @include mediaScreenMaxWidth($mobile-width) {
+            width: 75%;
+            margin-top: 70px;
+        }
+    }
+    @include mediaScreenMaxWidth($mobile-width) {
+        flex-direction: column-reverse;
+        align-items: center;
     }
 }
