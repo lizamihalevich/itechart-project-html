@@ -1,0 +1,7 @@
+.interaction-choose {
+    margin-left: 260px;
+    margin-top: 290px;
+    @include mediaScreenMaxWidth($tablet-width) {
+        margin: 0;
+    }
+}

@@ -1,10 +1,15 @@
 @import "./features-header.scss";
 @import "./features-list.scss";
+@import "./features-borderline.scss";
+@import "./features-list-item-container.scss";
+@import "./features-list-item.scss";
+@import "./features-list-summary.scss";
 .features {
     &__header {
         margin-top: 90px;
     }
     &__list {
         margin-top: 20px;
+        margin-bottom: 130px;
     }
 }

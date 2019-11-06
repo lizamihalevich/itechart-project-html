@@ -1,0 +1,45 @@
+.interaction-icons-icon-inner {
+    width: 200px;
+    height: 200px;
+    background-color: #f1b451;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    @include mediaScreenMaxWidth($tablet-width) {
+        width: 160px;
+        height: 160px;
+    }
+    @include mediaScreenMaxWidth($mobile-width) {
+        width: 80px;
+        height: 80px;
+        border-radius: 4px;
+        padding: 0;
+    }
+    &__image {
+        transform: rotate(-45deg);
+        width: 85px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 65px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            width: 35px;
+            transform: rotate(-45deg) translateY(10px);
+        }
+    }
+    &__text {
+        transform: rotate(-45deg) translateX(25px);
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: #000;
+        @include mediaScreenMaxWidth($tablet-width) {
+            transform: rotate(-45deg) translateX(20px);
+            font-size: 18px;
+            line-height: initial;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            font-size: 10px;
+            transform: rotate(-45deg) translateX(6px) translateY(8px);
+        }
+    }
+}

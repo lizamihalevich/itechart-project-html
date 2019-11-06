@@ -1,0 +1,27 @@
+.interaction-summary-header {
+    &__main-text {
+        color: #ffffff;
+        width: 470px;
+        font-size: 83px;
+        font-weight: 700;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: inherit;
+            font-size: 45px;
+            text-align: center;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            font-size: 20px;
+        }
+    }
+    &__additional-info {
+        margin-top: 20px;
+        margin-bottom: 60px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-top: 40px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+    }
+}

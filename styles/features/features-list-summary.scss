@@ -1,0 +1,11 @@
+.features-list-summary {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    &__item {
+        flex-grow: 1;
+        width: 33%;
+        margin-top: 55px;
+    }
+}

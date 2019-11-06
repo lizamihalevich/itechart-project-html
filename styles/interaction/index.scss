@@ -1,6 +1,14 @@
 @import "./interaction-icons.scss";
 @import "./interaction-small-panel.scss";
 @import "./interaction-summary.scss";
+@import "./interaction-ask-question.scss";
+@import "./interaction-choose.scss";
+@import "./interaction-icons-icon-inner.scss";
+@import "./interaction-icons-icon.scss";
+@import "./interaction-select-from-top.scss";
+@import "./interaction-small-panel-item.scss";
+@import "./interaction-summary-header-additional-info.scss";
+@import "./interaction-summary-header.scss";
 .interaction {
     background-color: $main-theme-color;
     display: flex;

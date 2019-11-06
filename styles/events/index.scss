@@ -1,0 +1,11 @@
+@import "./events-header.scss";
+@import "./events-summary.scss";
+@import "./events-borderline.scss";
+@import "./events-summary-container.scss";
+@import "./events-summary-container-item-header-external.scss";
+.events {
+    background-color: #e8e8e8;
+    &__header {
+        padding-top: 90px;
+    }
+}

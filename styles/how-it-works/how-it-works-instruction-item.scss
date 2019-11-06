@@ -1,16 +1,3 @@
-.how-it-works-instruction-summary {
-    width: 95%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    @include mediaScreenMaxWidth(1050px) {
-        width: 70%;
-    }
-    @include mediaScreenMaxWidth($mobile-width) {
-        width: 95%;
-    }
-}
-
 .how-it-works-instruction-item {
     display: flex;
     flex-direction: column;
