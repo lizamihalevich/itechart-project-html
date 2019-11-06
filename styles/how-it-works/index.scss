@@ -7,6 +7,9 @@
         @include mediaScreenMaxWidth($tablet-width) {
             margin-top: 34px;
         }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-top: 45px;
+        }
     }
     &__instruction {
         margin-top: 100px;

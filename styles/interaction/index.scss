@@ -9,10 +9,16 @@
     &__summary {
         width: 40%;
         @include mediaScreenMaxWidth($tablet-width) {
-            width: 65%;
+            width: 80%;
         }
     }
     &__icons {
         width: 45%;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: inherit;
+        }
+        @include mediaScreenMaxWidth(1200px) {
+            width: 40%;
+        }
     }
 }
