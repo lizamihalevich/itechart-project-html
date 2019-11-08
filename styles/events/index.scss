@@ -6,12 +6,32 @@
 @import "./events-summary-container-item-header-interactive.scss";
 @import "./events-summary-container-item-header-internal.scss";
 @import "./events-summary-container-item-header.scss";
+@import "./events-summary-container-item.scss";
+@import "./events-summary-container-external.scss";
+@import "./events-summary-container-interactive.scss";
+@import "./events-summary-container-internal.scss";
+@import "./events-summary-container-item-summary.scss";
+@import "./events-summary-container-external-button.scss";
+@import "./events-summary-container-interactive-button.scss";
+@import "./events-summary-container-internal-button.scss";
 .events {
     background-color: #e8e8e8;
     &__header {
-        padding-top: 90px;
+        padding-top: 60px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            padding-top: 155px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            display: none;
+        }
     }
     &__summary {
         margin-top: 100px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-top: 200px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-top: 0;
+        }
     }
 }

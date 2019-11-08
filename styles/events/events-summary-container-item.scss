@@ -1,0 +1,7 @@
+.events-summary-container-item {
+    margin-bottom: 50px;
+    background-color: #fff;
+    @include mediaScreenMaxWidth($mobile-width) {
+        margin-bottom: 0;
+    }
+}

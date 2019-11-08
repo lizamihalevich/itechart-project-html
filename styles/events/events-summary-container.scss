@@ -2,4 +2,21 @@
     width: 70%;
     display: flex;
     justify-content: space-evenly;
+    @include mediaScreenMaxWidth($tablet-width) {
+        width: 100%;
+        margin-bottom: 360px;
+    }
+    @include mediaScreenMaxWidth($mobile-width) {
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    &__item {
+        width: 34%;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 30%;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            width: 100%;
+        }
+    }
 }

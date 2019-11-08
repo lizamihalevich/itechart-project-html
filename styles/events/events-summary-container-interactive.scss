@@ -1,0 +1,19 @@
+.events-summary-container-interactive {
+    transform: scale(1.1);
+    z-index: 100;
+    box-shadow: 0 0 65px 3px rgba(30, 30, 30, 0.26);
+    &__line {
+        width: 100%;
+        margin-top: 5px;
+        height: 4px;
+        background-color: #f26250;
+        @include mediaScreenMaxWidth($mobile-width) {
+            display: none;
+        }
+    }
+    @include mediaScreenMaxWidth($mobile-width) {
+        transform: none;
+        background: url("../images/events-second-bg.png") no-repeat top center;
+        background-size: cover;
+    }
+}

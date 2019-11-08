@@ -1,4 +1,7 @@
 .events-summary-container-item-header-internal {
     background: url("../images/events-third-bg.png") no-repeat top center;
     background-size: cover;
+    @include mediaScreenMaxWidth($mobile-width) {
+        background-image: none;
+    }
 }
