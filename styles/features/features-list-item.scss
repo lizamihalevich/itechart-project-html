@@ -2,11 +2,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-right: 1px solid #037693;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 2px;
+        height: 135px;
+        background-color: #037693;
+        @include mediaScreenMaxWidth($tablet-width) {
+            content: none;
+        }
+        ;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: -25px;
+        height: 2px;
+        width: 320px;
+        background-color: #037693;
+        @include mediaScreenMaxWidth($tablet-width) {
+            top: -50px;
+            width: 420px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            top: -5px;
+            width: 220px;
+        }
+    }
     &__container {
         width: 70%;
-    }
-    &-last {
-        border-right: none;
     }
 }

@@ -1,5 +1,4 @@
 .features-list-summary {
-    width: 65%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -7,5 +6,12 @@
         flex-grow: 1;
         width: 33%;
         margin-top: 55px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 40%;
+            margin-top: 110px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-top: 30px;
+        }
     }
 }

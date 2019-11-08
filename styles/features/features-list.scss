@@ -1,4 +1,13 @@
 .features-list {
     display: flex;
     justify-content: center;
+    &__summary {
+        width: 65%;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 100%;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            width: 80%;
+        }
+    }
 }

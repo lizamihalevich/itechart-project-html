@@ -1,0 +1,16 @@
+.features-list-item-first-row-desktop {
+    &::before {
+        content: none;
+        @include mediaScreenMaxWidth($tablet-width) {
+            content: "";
+            position: absolute;
+            top: -50px;
+            height: 2px;
+            background-color: #037693;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            top: -5px;
+            width: 220px;
+        }
+    }
+}

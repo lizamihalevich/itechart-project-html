@@ -1,0 +1,5 @@
+.features-list-item-last {
+    &::after {
+        content: none;
+    }
+}

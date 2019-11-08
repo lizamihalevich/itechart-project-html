@@ -1,0 +1,17 @@
+.features-list-item-first-col-tablet {
+    &::after {
+        @include mediaScreenMaxWidth($tablet-width) {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 2px;
+            height: 245px;
+            background-color: #037693;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            height: 80px;
+            top: 20px;
+        }
+    }
+}

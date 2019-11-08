@@ -3,9 +3,15 @@
 @import "./events-borderline.scss";
 @import "./events-summary-container.scss";
 @import "./events-summary-container-item-header-external.scss";
+@import "./events-summary-container-item-header-interactive.scss";
+@import "./events-summary-container-item-header-internal.scss";
+@import "./events-summary-container-item-header.scss";
 .events {
     background-color: #e8e8e8;
     &__header {
         padding-top: 90px;
+    }
+    &__summary {
+        margin-top: 100px;
     }
 }

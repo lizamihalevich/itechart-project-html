@@ -4,12 +4,29 @@
 @import "./features-list-item-container.scss";
 @import "./features-list-item.scss";
 @import "./features-list-summary.scss";
+@import "./features-list-item-last.scss";
+@import "./features-list-item-first-row-desktop.scss";
+@import "./features-list-item-first-col-tablet.scss";
+@import "./features-list-item-first-tablet.scss";
 .features {
     &__header {
         margin-top: 90px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-top: 125px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-top: 35px;
+        }
     }
     &__list {
         margin-top: 20px;
         margin-bottom: 130px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-top: 0px;
+            margin-bottom: 195px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-bottom: 130px;
+        }
     }
 }
