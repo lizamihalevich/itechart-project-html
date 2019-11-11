@@ -1,3 +1,7 @@
 .events-summary-container-interactive-button {
     background-color: #f26250;
+    @include mediaScreenMaxWidth($mobile-width) {
+        background-color: #fff;
+        color: #f26250;
+    }
 }

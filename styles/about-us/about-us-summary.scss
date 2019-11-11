@@ -1,0 +1,8 @@
+.about-us-summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__content {
+        margin-top: 60px;
+    }
+}

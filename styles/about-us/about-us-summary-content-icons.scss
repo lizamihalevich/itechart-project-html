@@ -1,0 +1,9 @@
+.about-us-summary-content-icons {
+    display: flex;
+    &__icon {
+        margin: 40px 10px;
+    }
+    @include mediaScreenMaxWidth($tablet-width) {
+        justify-content: space-evenly;
+    }
+}

@@ -34,4 +34,7 @@
             margin-top: 0;
         }
     }
+    @include mediaScreenMaxWidth($mobile-width) {
+        background-color: #fff;
+    }
 }

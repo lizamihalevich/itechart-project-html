@@ -2,6 +2,6 @@
     margin-bottom: 50px;
     background-color: #fff;
     @include mediaScreenMaxWidth($mobile-width) {
-        margin-bottom: 0;
+        margin-bottom: 3px;
     }
 }

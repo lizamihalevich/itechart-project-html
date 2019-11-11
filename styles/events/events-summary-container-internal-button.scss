@@ -1,3 +1,7 @@
 .events-summary-container-internal-button {
     background-color: #f0a765;
+    @include mediaScreenMaxWidth($mobile-width) {
+        background-color: #fff;
+        color: #f0a765;
+    }
 }

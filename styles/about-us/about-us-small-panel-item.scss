@@ -1,0 +1,25 @@
+.about-us-small-panel-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #037693;
+    border-right: none;
+    padding: 20px;
+    transform: rotate(270deg) translateX(-130px) translateY(45px);
+    &__dot {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #037693;
+    }
+    &__line {
+        width: 120px;
+        height: 2px;
+        background-color: #037693;
+    }
+    &__text {
+        font-size: 40px;
+        color: #037693;
+        letter-spacing: 2px;
+        font-weight: 300;
+    }
+}

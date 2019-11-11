@@ -7,6 +7,7 @@
         width: 80px;
         @include mediaScreenMaxWidth($mobile-width) {
             filter: invert(100%) sepia(0%) saturate(100%) brightness(10000%) contrast(100%);
+            flex-grow: 1;
         }
     }
     &__text {
@@ -17,6 +18,11 @@
         text-align: center;
         @include mediaScreenMaxWidth($mobile-width) {
             color: #fff;
+            flex-grow: 1;
+            width: 70%;
+            font-size: 30px;
+            font-weight: 200;
+            line-height: 45px;
         }
     }
     &__button {
@@ -27,5 +33,16 @@
         border: none;
         border-radius: 35px;
         margin: 15px 0 35px;
+        @include mediaScreenMaxWidth($mobile-width) {
+            padding: 10px 28px;
+            margin: 20px 0 35px;
+        }
+    }
+    @include mediaScreenMaxWidth($mobile-width) {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        width: 90%;
+        margin: auto;
     }
 }

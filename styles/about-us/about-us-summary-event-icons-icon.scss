@@ -1,0 +1,19 @@
+.about-us-summary-event-icons-icon {
+    &__number {
+        color: #f0a765;
+        font-family: Lato;
+        font-size: 55px;
+        font-weight: 400;
+        margin-top: 25px;
+    }
+    &__text {
+        font-size: 25px;
+        margin-top: 25px;
+    }
+    &__line {
+        width: 180px;
+        height: 4px;
+        background-color: #f0a765;
+        margin-top: 40px;
+    }
+}

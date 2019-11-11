@@ -1,0 +1,19 @@
+.about-us-summary-audience-icons-icon {
+    &__number {
+        color: #4ca59a;
+        font-family: Lato;
+        font-size: 55px;
+        font-weight: 400;
+        margin-top: 25px;
+    }
+    &__text {
+        font-size: 25px;
+        margin-top: 25px;
+    }
+    &__line {
+        width: 180px;
+        height: 4px;
+        background-color: #4ca59a;
+        margin-top: 40px;
+    }
+}

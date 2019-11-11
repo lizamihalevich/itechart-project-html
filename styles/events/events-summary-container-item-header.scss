@@ -15,6 +15,9 @@
         @include mediaScreenMaxWidth(1020px) {
             font-size: 35px;
         }
+        @include mediaScreenMaxWidth($mobile-width) {
+            font-size: 65px;
+        }
     }
     &__event {
         color: #ffffff;
@@ -28,9 +31,15 @@
         @include mediaScreenMaxWidth(1020px) {
             font-size: 35px;
         }
+        @include mediaScreenMaxWidth($mobile-width) {
+            font-size: 65px;
+        }
     }
     @include mediaScreenMaxWidth($mobile-width) {
         flex-direction: row;
         justify-content: center;
+    }
+    @include mediaScreenMaxWidth($mobile-width) {
+        justify-content: space-evenly;
     }
 }

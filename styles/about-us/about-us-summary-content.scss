@@ -1,0 +1,13 @@
+.about-us-summary-content {
+    display: flex;
+    &__description {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    &__icons {
+        width: 100%;
+    }
+    @include mediaScreenMaxWidth($tablet-width) {
+        flex-direction: column-reverse;
+    }
+}

@@ -1,4 +1,7 @@
 .events-summary {
     display: flex;
     justify-content: center;
+    &__container {
+        margin-bottom: 22px;
+    }
 }
