@@ -1,4 +1,37 @@
 .interaction-icons {
+    &__icon {
+        width: 220px;
+        height: 220px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 180px;
+            height: 180px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            width: 85px;
+            height: 85px;
+        }
+        &_choose {
+            margin-left: 260px;
+            margin-top: 290px;
+            @include mediaScreenMaxWidth($tablet-width) {
+                margin: 0;
+            }
+        }
+        &_select-from-top {
+            margin-top: -80px;
+            margin-left: 80px;
+            @include mediaScreenMaxWidth($tablet-width) {
+                margin: 0;
+            }
+        }
+        &_ask-question {
+            margin-top: -505px;
+            margin-left: 80px;
+            @include mediaScreenMaxWidth($tablet-width) {
+                margin: 0;
+            }
+        }
+    }
     @include mediaScreenMaxWidth($tablet-width) {
         display: flex;
         flex-direction: column;

@@ -35,6 +35,27 @@
             font-size: 65px;
         }
     }
+    &_external {
+        background: url("../images/events-first-bg.png") no-repeat top center;
+        background-size: cover;
+        @include mediaScreenMaxWidth($mobile-width) {
+            background-image: none;
+        }
+    }
+    &_interactive {
+        background: url("../images/events-second-bg.png") no-repeat top center;
+        background-size: cover;
+        @include mediaScreenMaxWidth($mobile-width) {
+            background-image: none;
+        }
+    }
+    &_internal {
+        background: url("../images/events-third-bg.png") no-repeat top center;
+        background-size: cover;
+        @include mediaScreenMaxWidth($mobile-width) {
+            background-image: none;
+        }
+    }
     @include mediaScreenMaxWidth($mobile-width) {
         flex-direction: row;
         justify-content: center;

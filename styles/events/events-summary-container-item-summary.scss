@@ -37,12 +37,31 @@
             padding: 10px 28px;
             margin: 20px 0 35px;
         }
+        &_external {
+            background-color: #4ca59a;
+            @include mediaScreenMaxWidth($mobile-width) {
+                background-color: #fff;
+                color: #4ca59a;
+            }
+        }
+        &_interactive {
+            background-color: #f26250;
+            @include mediaScreenMaxWidth($mobile-width) {
+                background-color: #fff;
+                color: #f26250;
+            }
+        }
+        &_internal {
+            background-color: #f0a765;
+            @include mediaScreenMaxWidth($mobile-width) {
+                background-color: #fff;
+                color: #f0a765;
+            }
+        }
     }
     @include mediaScreenMaxWidth($mobile-width) {
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: row;
-        width: 90%;
-        margin: auto;
     }
 }

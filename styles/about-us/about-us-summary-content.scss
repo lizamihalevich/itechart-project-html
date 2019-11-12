@@ -3,9 +3,15 @@
     &__description {
         width: 100%;
         margin-bottom: 60px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-top: 80px;
+        }
     }
     &__icons {
         width: 100%;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-top: 70px;
+        }
     }
     @include mediaScreenMaxWidth($tablet-width) {
         flex-direction: column-reverse;

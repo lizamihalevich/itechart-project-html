@@ -6,7 +6,7 @@
         font-weight: 700;
         @include mediaScreenMaxWidth($tablet-width) {
             width: inherit;
-            font-size: 45px;
+            font-size: 100px;
             text-align: center;
         }
         @include mediaScreenMaxWidth($mobile-width) {
@@ -18,6 +18,7 @@
         margin-bottom: 30px;
         @include mediaScreenMaxWidth($tablet-width) {
             margin-top: 40px;
+            margin-bottom: 80px;
         }
         @include mediaScreenMaxWidth($mobile-width) {
             margin-top: 12px;

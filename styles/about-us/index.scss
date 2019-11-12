@@ -1,10 +1,4 @@
-@import "./about-us-summary-audience-icons-icon-circle.scss";
-@import "./about-us-summary-audience-icons-icon.scss";
 @import "./about-us-borderline.scss";
-@import "./about-us-summary-event-icons-icon-circle.scss";
-@import "./about-us-summary-event-icons-icon.scss";
-@import "./about-us-summary-hours-icons-icon-circle.scss";
-@import "./about-us-summary-hours-icons-icon.scss";
 @import "./about-us-summary-content-icons-icon.scss";
 @import "./about-us-summary-content-icons.scss";
 @import "./about-us-small-panel-item.scss";
@@ -15,6 +9,7 @@
 @import "./about-us-summary.scss";
 @import "./about-us-summary-content-description.scss";
 @import "./about-us-summary-content.scss";
+@import "./about-us-summary-content-icons-icon-circle.scss";
 .about-us {
     display: flex;
     font-family: $main-font-family;

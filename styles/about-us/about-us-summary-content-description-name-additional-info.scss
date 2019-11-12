@@ -5,7 +5,7 @@
         color: $main-theme-color;
         font-size: 35px;
         @include mediaScreenMaxWidth($tablet-width) {
-            font-size: 45px;
+            font-size: 55px;
         }
         @include mediaScreenMaxWidth($mobile-width) {
             font-size: 15px;
@@ -16,7 +16,7 @@
         height: 2px;
         background-color: $main-theme-color;
         @include mediaScreenMaxWidth($tablet-width) {
-            margin-top: 20px;
+            margin-top: 30px;
         }
         @include mediaScreenMaxWidth($mobile-width) {
             width: 100px;

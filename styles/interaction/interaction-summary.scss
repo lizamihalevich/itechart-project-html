@@ -25,13 +25,13 @@
             line-height: 18px;
             margin-bottom: 0;
         }
-    }
-    &__paragraph-second {
-        @include mediaScreenMaxWidth($tablet-width) {
-            margin-bottom: 120px;
-        }
-        @include mediaScreenMaxWidth($mobile-width) {
-            margin-bottom: 22px;
+        &_second {
+            @include mediaScreenMaxWidth($tablet-width) {
+                margin-bottom: 120px;
+            }
+            @include mediaScreenMaxWidth($mobile-width) {
+                margin-bottom: 22px;
+            }
         }
     }
     @include mediaScreenMaxWidth($tablet-width) {

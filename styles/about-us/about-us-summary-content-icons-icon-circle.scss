@@ -1,0 +1,34 @@
+.about-us-summary-content-icons-icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    &__inner {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid white;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 85px;
+            height: 85px;
+        }
+        &_audience {
+            background-color: #4ca59a;
+        }
+        &_hours {
+            background-color: #f26250;
+        }
+        &_event {
+            background-color: #f0a765;
+        }
+    }
+    &_audience {
+        background-color: #a5d2cc;
+    }
+    &_hours {
+        background-color: #f8b0a7;
+    }
+    &_event {
+        background-color: #f7d3b2;
+    }
+}

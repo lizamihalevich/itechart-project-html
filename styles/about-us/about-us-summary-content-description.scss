@@ -6,8 +6,8 @@
         margin-bottom: 30px;
         width: 90%;
         @include mediaScreenMaxWidth($tablet-width) {
-            font-size: 28px;
-            line-height: 35px;
+            font-size: 35px;
+            line-height: 45px;
             width: 70%;
             text-align: center;
             margin-bottom: 0px;
@@ -18,15 +18,15 @@
             line-height: 18px;
             margin-bottom: 0;
         }
-    }
-    &__paragraph-second {
-        width: 90%;
-        color: #2d2d2d;
-        @include mediaScreenMaxWidth($tablet-width) {
-            margin-bottom: 120px;
-        }
-        @include mediaScreenMaxWidth($mobile-width) {
-            margin-bottom: 22px;
+        &_second {
+            width: 90%;
+            color: #2d2d2d;
+            @include mediaScreenMaxWidth($tablet-width) {
+                margin-bottom: 120px;
+            }
+            @include mediaScreenMaxWidth($mobile-width) {
+                margin-bottom: 22px;
+            }
         }
     }
     @include mediaScreenMaxWidth($tablet-width) {

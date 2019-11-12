@@ -3,7 +3,6 @@
     color: $main-theme-color;
     font-family: $main-font-family;
     font-weight: 300;
-    margin-left: 500px;
     &__text {
         font-size: 66px;
         letter-spacing: 4px;
@@ -13,8 +12,5 @@
     }
     &__borderline {
         margin-top: 12px;
-    }
-    @include mediaScreenMaxWidth ($tablet-width) {
-        margin: auto;
     }
 }

@@ -2,6 +2,14 @@
     display: flex;
     justify-content: center;
     &__container {
+        width: 70%;
         margin-bottom: 22px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 100%;
+            margin-bottom: 360px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-bottom: 0px;
+        }
     }
 }

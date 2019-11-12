@@ -3,4 +3,13 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: flex-start;
+    &__summary {
+        width: 95%;
+        @include mediaScreenMaxWidth(1050px) {
+            width: 70%;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            width: 95%;
+        }
+    }
 }

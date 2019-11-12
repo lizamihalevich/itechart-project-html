@@ -1,9 +1,0 @@
-.events-summary-container-item-header-interactive {
-    background: url("../images/events-second-bg.png") no-repeat top center;
-    background-size: cover;
-    margin-top: -20px;
-    @include mediaScreenMaxWidth($mobile-width) {
-        margin-top: 0;
-        background-image: none;
-    }
-}

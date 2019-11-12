@@ -1,22 +1,24 @@
 .interaction-icons-icon {
-    width: 220px;
-    height: 220px;
     background-color: transparent;
     border: 1px solid #f1b451;
     display: flex;
     border-radius: 10px;
     transform: rotate(45deg);
     transform-origin: center;
-    @include mediaScreenMaxWidth($tablet-width) {
-        width: 180px;
-        height: 180px;
-    }
     @include mediaScreenMaxWidth($mobile-width) {
-        width: 85px;
-        height: 85px;
         border-radius: 4px;
     }
     &__inner {
         margin: auto;
+        width: 200px;
+        height: 200px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 160px;
+            height: 160px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            width: 80px;
+            height: 80px;
+        }
     }
 }

@@ -1,17 +1,9 @@
 .interaction-icons-icon-inner {
-    width: 200px;
-    height: 200px;
     background-color: #f1b451;
     border-radius: 10px;
     padding: 20px;
     box-sizing: border-box;
-    @include mediaScreenMaxWidth($tablet-width) {
-        width: 160px;
-        height: 160px;
-    }
     @include mediaScreenMaxWidth($mobile-width) {
-        width: 80px;
-        height: 80px;
         border-radius: 4px;
         padding: 0;
     }
