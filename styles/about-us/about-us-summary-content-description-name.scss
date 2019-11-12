@@ -10,7 +10,7 @@
             text-align: center;
         }
         @include mediaScreenMaxWidth($mobile-width) {
-            font-size: 20px;
+            font-size: 50px;
         }
     }
     &__additional-info {
@@ -21,7 +21,7 @@
             margin-bottom: 80px;
         }
         @include mediaScreenMaxWidth($mobile-width) {
-            margin-top: 12px;
+            margin-top: 20px;
             margin-bottom: 12px;
         }
     }

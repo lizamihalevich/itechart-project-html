@@ -15,5 +15,8 @@
     font-family: $main-font-family;
     &__summary {
         margin-top: 125px;
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-top: 50px;
+        }
     }
 }

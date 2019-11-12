@@ -8,7 +8,7 @@
             font-size: 55px;
         }
         @include mediaScreenMaxWidth($mobile-width) {
-            font-size: 15px;
+            font-size: 25px;
         }
     }
     &__line {
@@ -19,8 +19,8 @@
             margin-top: 30px;
         }
         @include mediaScreenMaxWidth($mobile-width) {
-            width: 100px;
-            margin-top: 5px;
+            width: 150px;
+            margin-top: 10px;
         }
     }
     @include mediaScreenMaxWidth($tablet-width) {

@@ -9,6 +9,9 @@
         @include mediaScreenMaxWidth($tablet-width) {
             font-size: 56px;
         }
+        @include mediaScreenMaxWidth($mobile-width) {
+            font-size: 50px;
+        }
     }
     &__borderline {
         margin-top: 12px;

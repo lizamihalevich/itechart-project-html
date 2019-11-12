@@ -13,9 +13,9 @@
             margin-bottom: 0px;
         }
         @include mediaScreenMaxWidth($mobile-width) {
-            width: initial;
-            font-size: 14px;
-            line-height: 18px;
+            font-size: 18px;
+            line-height: 25px;
+            margin-top: 20px;
             margin-bottom: 0;
         }
         &_second {
@@ -26,6 +26,7 @@
             }
             @include mediaScreenMaxWidth($mobile-width) {
                 margin-bottom: 22px;
+                margin-top: 0px;
             }
         }
     }
