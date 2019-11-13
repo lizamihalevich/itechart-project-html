@@ -26,6 +26,9 @@
             top: -50px;
             width: 420px;
         }
+        @include mediaScreenMaxWidth(845px) {
+            width: 350px;
+        }
         @include mediaScreenMaxWidth($mobile-width) {
             top: -5px;
             width: 220px;

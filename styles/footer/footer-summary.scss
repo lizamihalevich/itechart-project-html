@@ -1,0 +1,27 @@
+.footer-summary {
+    display: flex;
+    justify-content: center;
+    &__item {
+        width: 25%;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 50%;
+        }
+        &_center {
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            @include mediaScreenMaxWidth($tablet-width) {
+                width: 100%;
+            }
+        }
+        &_company-info {
+            width: 35%;
+            @include mediaScreenMaxWidth($tablet-width) {
+                width: 100%;
+            }
+        }
+    }
+    @include mediaScreenMaxWidth($tablet-width) {
+        flex-wrap: wrap;
+    }
+}
