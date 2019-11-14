@@ -43,6 +43,9 @@
                 background-color: #fff;
                 color: #4ca59a;
             }
+            &:hover {
+                background-color: #449087;
+            }
         }
         &_interactive {
             background-color: #f26250;
@@ -50,12 +53,18 @@
                 background-color: #fff;
                 color: #f26250;
             }
+            &:hover {
+                background-color: #cc5344;
+            }
         }
         &_internal {
             background-color: #f0a765;
             @include mediaScreenMaxWidth($mobile-width) {
                 background-color: #fff;
                 color: #f0a765;
+            }
+            &:hover {
+                background-color: #d09158;
             }
         }
     }

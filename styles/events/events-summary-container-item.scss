@@ -1,18 +1,12 @@
 .events-summary-container-item {
     background-color: #fff;
+    transition-duration: 0.5s;
+    box-shadow: 0 2px 5px 1px rgba(30, 30, 30, 0.2);
     @include mediaScreenMaxWidth($mobile-width) {}
     &__summary {
         @include mediaScreenMaxWidth($mobile-width) {
             width: 90%;
             margin: auto;
-        }
-    }
-    &__header {
-        &_interactive {
-            margin-top: -20px;
-            @include mediaScreenMaxWidth($mobile-width) {
-                margin-top: 0;
-            }
         }
     }
     &__line {
@@ -32,8 +26,19 @@
             background-color: #f0a765;
         }
     }
+    &:hover {
+        box-shadow: 0 0 65px 3px rgba(30, 30, 30, 0.26);
+        transform: scale(1.1);
+        z-index: 1;
+        transition-duration: 0.5s;
+    }
+    @include mediaScreenMaxWidth($mobile-width) {
+        &:hover {
+            box-shadow: none;
+            transform: none;
+        }
+    }
     &_external {
-        box-shadow: 0 2px 5px 1px rgba(30, 30, 30, 0.2);
         @include mediaScreenMaxWidth($mobile-width) {
             box-shadow: none;
             background: url("../images/events-first-bg.png") no-repeat top center;
@@ -41,9 +46,6 @@
         }
     }
     &_interactive {
-        transform: scale(1.1);
-        z-index: 1;
-        box-shadow: 0 0 65px 3px rgba(30, 30, 30, 0.26);
         @include mediaScreenMaxWidth($mobile-width) {
             transform: none;
             background: url("../images/events-second-bg.png") no-repeat top center;
@@ -51,7 +53,6 @@
         }
     }
     &_internal {
-        box-shadow: 0 2px 5px 1px rgba(30, 30, 30, 0.2);
         @include mediaScreenMaxWidth($mobile-width) {
             background: url("../images/events-third-bg.png") no-repeat top center;
             background-size: cover;
