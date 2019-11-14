@@ -19,10 +19,10 @@
         width: 60%;
         justify-content: flex-end;
         @include mediaScreenMaxWidth($tablet-width) {
-            margin: 232px 0px 230px;
+            margin: 232px 0 230px 0;
         }
         @include mediaScreenMaxWidth (1180px) {
-            margin: 232px 0px 135px;
+            margin: 232px 0 135px 0;
         }
         @include mediaScreenMaxWidth($mobile-width) {
             width: 100%;

@@ -1,12 +1,8 @@
 .events-summary-container {
     display: flex;
     justify-content: space-evenly;
-    @include mediaScreenMaxWidth($tablet-width) {
-        margin-bottom: 360px;
-    }
     @include mediaScreenMaxWidth($mobile-width) {
         flex-direction: column;
-        margin-bottom: 0px;
     }
     &__item {
         margin-bottom: 50px;

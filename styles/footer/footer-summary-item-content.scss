@@ -9,7 +9,7 @@
         @include mediaScreenMaxWidth($tablet-width) {
             font-size: 52px;
             font-weight: 500;
-            margin: 0 0 70px;
+            margin: 0 0 70px 0;
         }
     }
     @include mediaScreenMaxWidth($tablet-width) {
