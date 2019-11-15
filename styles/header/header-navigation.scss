@@ -21,11 +21,13 @@
         font-family: $main-font-family;
         font-size: $menu-item-desktop-font-size;
         @include mediaScreenMaxWidth($tablet-width) {
-            padding: 54px 12px;
             font-size: $menu-item-tablet-font-size;
         }
+        @include mediaScreenMaxWidth(1040px) {
+            padding: 0px 10px;
+        }
         @include mediaScreenMaxWidth(975px) {
-            padding: 54px 4px;
+            padding: 0 4px;
         }
         &:hover {
             box-sizing: border-box;

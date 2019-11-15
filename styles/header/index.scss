@@ -23,6 +23,9 @@
     &__nav-panel {
         display: block;
         flex-shrink: 0;
+        @include mediaScreenMaxWidth($tablet-width) {
+            display: flex;
+        }
         @include mediaScreenMaxWidth($mobile-width) {
             display: none;
         }

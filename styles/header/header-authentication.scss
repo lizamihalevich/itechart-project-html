@@ -6,6 +6,9 @@
     &__log-in {
         cursor: pointer;
         margin-right: 34px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            padding: 47px 0;
+        }
         @include mediaScreenMaxWidth(975px) {
             margin-right: 6px;
         }
@@ -15,6 +18,9 @@
     }
     &__register {
         cursor: pointer;
+        @include mediaScreenMaxWidth($tablet-width) {
+            padding: 47px 0;
+        }
         @include mediaScreenMaxWidth($mobile-width) {
             display: none;
         }
