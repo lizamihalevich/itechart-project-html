@@ -4,6 +4,9 @@
     justify-content: space-between;
     &__content {
         margin-top: 60px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-top: 75px;
+        }
         @include mediaScreenMaxWidth($mobile-width) {
             margin-top: 0;
         }

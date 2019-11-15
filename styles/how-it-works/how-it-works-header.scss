@@ -12,5 +12,8 @@
     }
     &__borderline {
         margin-top: 12px;
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-top: 8px;
+        }
     }
 }

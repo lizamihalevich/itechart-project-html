@@ -6,6 +6,9 @@
         height: 6px;
         border-radius: 5px;
         background-color: $main-theme-color;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 55px;
+        }
     }
     &__short {
         width: 10px;
@@ -14,5 +17,8 @@
         background-color: $main-theme-color;
         margin-right: 20px;
         margin-left: 130px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-left: 120px;
+        }
     }
 }

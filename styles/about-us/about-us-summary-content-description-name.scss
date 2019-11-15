@@ -17,8 +17,8 @@
         margin-top: 20px;
         margin-bottom: 30px;
         @include mediaScreenMaxWidth($tablet-width) {
-            margin-top: 40px;
-            margin-bottom: 80px;
+            margin-top: 30px;
+            margin-bottom: 85px;
         }
         @include mediaScreenMaxWidth($mobile-width) {
             margin-top: 20px;

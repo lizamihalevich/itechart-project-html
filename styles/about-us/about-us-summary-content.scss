@@ -4,7 +4,7 @@
         width: 100%;
         margin-bottom: 84px;
         @include mediaScreenMaxWidth($tablet-width) {
-            margin-top: 90px;
+            margin-top: 80px;
         }
         @include mediaScreenMaxWidth($mobile-width) {
             margin-top: 10px;
@@ -15,12 +15,15 @@
         width: 100%;
         @include mediaScreenMaxWidth($tablet-width) {
             margin-top: 70px;
+            width: 90%;
         }
         @include mediaScreenMaxWidth($mobile-width) {
-            margin-top: 0;
+            margin-top: 8px;
+            width: 80%;
         }
     }
     @include mediaScreenMaxWidth($tablet-width) {
         flex-direction: column-reverse;
+        align-items: center;
     }
 }

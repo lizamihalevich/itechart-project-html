@@ -16,7 +16,7 @@
     &__summary {
         margin-top: 125px;
         @include mediaScreenMaxWidth($mobile-width) {
-            margin-top: 50px;
+            margin-top: 55px;
         }
     }
 }

@@ -8,8 +8,8 @@
             margin-top: 160px;
         }
         @include mediaScreenMaxWidth($mobile-width) {
-            width: 115px;
-            margin-top: 70px;
+            width: 110px;
+            margin-top: 75px;
         }
     }
     &__company-info {
@@ -22,15 +22,16 @@
         font-weight: 200;
         @include mediaScreenMaxWidth($tablet-width) {
             width: 75%;
-            margin-top: 85px;
+            margin-top: 75px;
             font-size: 65px;
             line-height: 85px;
-            margin-bottom: 150px;
+            margin-bottom: 165px;
         }
         @include mediaScreenMaxWidth($mobile-width) {
-            margin-top: 30px;
-            font-size: 30px;
+            margin-top: 35px;
+            font-size: 32px;
             line-height: 42px;
+            margin-bottom: 105px;
         }
     }
     &__header {
@@ -38,7 +39,7 @@
         font-weight: 500;
         margin: 190px 0 30px 0;
         @include mediaScreenMaxWidth($tablet-width) {
-            margin: 110px 0 120px 0;
+            margin: 85px 0 120px 0;
             font-size: 80px;
         }
         @include mediaScreenMaxWidth($mobile-width) {
