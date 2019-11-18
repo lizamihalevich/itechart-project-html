@@ -18,6 +18,9 @@
         @include mediaScreenMaxWidth($mobile-width) {
             font-size: 65px;
         }
+        @include mediaScreenMaxWidth(420px) {
+            font-size: 35px;
+        }
     }
     &__event {
         color: #ffffff;
@@ -33,6 +36,9 @@
         }
         @include mediaScreenMaxWidth($mobile-width) {
             font-size: 65px;
+        }
+        @include mediaScreenMaxWidth(420px) {
+            font-size: 35px;
         }
     }
     &_external {
@@ -58,9 +64,9 @@
     }
     @include mediaScreenMaxWidth($mobile-width) {
         flex-direction: row;
-        justify-content: center;
-    }
-    @include mediaScreenMaxWidth($mobile-width) {
         justify-content: space-evenly;
+    }
+    @include mediaScreenMaxWidth(620px) {
+        flex-direction: column;
     }
 }

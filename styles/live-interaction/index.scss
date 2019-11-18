@@ -42,7 +42,7 @@
         @include mediaScreenMaxWidth($tablet-width) {
             margin-top: 218px;
         }
-        @include mediaScreenMaxWidth($mobile-width) {
+        @include mediaScreenMaxWidth(768px) {
             display: none;
         }
     }

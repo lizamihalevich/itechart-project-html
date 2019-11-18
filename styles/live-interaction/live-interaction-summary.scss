@@ -14,6 +14,7 @@
         @include mediaScreenMaxWidth($mobile-width) {
             margin: auto;
             font-size: $main-header-font-size-mobile;
+            text-align: center;
         }
     }
     &__text {
@@ -26,6 +27,7 @@
         @include mediaScreenMaxWidth($mobile-width) {
             margin: 23px auto;
             font-size: $heading-text-font-size-mobile;
+            text-align: center;
         }
     }
     &__borderline {
@@ -37,12 +39,16 @@
             margin-left: 480px;
         }
         @include mediaScreenMaxWidth(1180px) {
-            margin: 15px 30px 0 0;
+            margin: 15px 75px 0 0;
             align-self: flex-end;
         }
         @include mediaScreenMaxWidth($mobile-width) {
             margin-top: 5px;
             margin-right: 90px;
+        }
+        @include mediaScreenMaxWidth(600px) {
+            align-self: center;
+            margin-right: 0;
         }
     }
     &__borderline-small {

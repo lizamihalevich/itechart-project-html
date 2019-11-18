@@ -33,6 +33,9 @@
             top: -5px;
             width: 220px;
         }
+        @include mediaScreenMaxWidth(400px) {
+            width: 90px;
+        }
     }
     &__container {
         width: 70%;

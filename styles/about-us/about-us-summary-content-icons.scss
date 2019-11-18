@@ -6,4 +6,7 @@
     @include mediaScreenMaxWidth($tablet-width) {
         justify-content: space-evenly;
     }
+    @include mediaScreenMaxWidth(525px) {
+        flex-direction: column;
+    }
 }

@@ -27,6 +27,9 @@
                     top: -5px;
                     width: 220px;
                 }
+                @include mediaScreenMaxWidth(400px) {
+                    width: 90px;
+                }
             }
         }
         &_first-medium {

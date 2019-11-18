@@ -24,6 +24,10 @@
             font-weight: 200;
             line-height: 45px;
         }
+        @include mediaScreenMaxWidth(420px) {
+            font-size: 20px;
+            line-height: 30px;
+        }
     }
     &__button {
         color: #fffaff;
