@@ -1,0 +1,49 @@
+@import "./live-interaction-events.scss";
+@import "./live-interaction-phone.scss";
+@import "./live-interaction-summary.scss";
+@import '../mixins.scss';
+.live-interaction {
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    background: url("../images/first-section-background.jpg") no-repeat top center;
+    background-size: cover;
+    @include mediaScreenMaxWidth($mobile-width) {
+        padding: 0;
+    }
+    &__summary {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+        width: 60%;
+        justify-content: flex-end;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin: 232px 0 230px 0;
+        }
+        @include mediaScreenMaxWidth (1180px) {
+            margin: 232px 0 135px 0;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            width: 100%;
+            margin: auto;
+            padding: 150px 0 26px 0;
+        }
+    }
+    &__phone {
+        display: flex;
+        flex-shrink: 0;
+        flex-grow: 1;
+        width: 30%;
+        margin-top: 272px;
+        @include mediaScreenMaxWidth(1180px) {
+            width: inherit;
+        }
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-top: 218px;
+        }
+        @include mediaScreenMaxWidth(768px) {
+            display: none;
+        }
+    }
+}

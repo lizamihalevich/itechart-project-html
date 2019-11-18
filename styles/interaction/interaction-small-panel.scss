@@ -1,0 +1,5 @@
+.interaction-small-panel {
+    @include mediaScreenMaxWidth($tablet-width) {
+        display: none;
+    }
+}

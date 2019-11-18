@@ -1,0 +1,50 @@
+.how-it-works-instruction-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    &__image-container {
+        width: 132px;
+        height: 132px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid $main-theme-color;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 100px;
+            height: 100px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            width: 95px;
+            height: 95px;
+        }
+        &:hover {
+            background-color: $main-theme-color;
+        }
+    }
+    &__image {
+        width: 80px;
+        padding: 30px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 50px;
+        }
+        &:hover {
+            filter: invert(100%) sepia(0%) saturate(100%) brightness(10000%) contrast(100%);
+        }
+    }
+    &__text {
+        font-family: $main-font-family;
+        font-size: 30px;
+        margin-top: 50px;
+        color: $main-theme-color;
+        @include mediaScreenMaxWidth($tablet-width) {
+            font-size: 22px;
+            margin-top: 40px;
+            line-height: 28px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin: 35px 0 45px 0;
+        }
+    }
+}

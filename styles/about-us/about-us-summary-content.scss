@@ -1,0 +1,29 @@
+.about-us-summary-content {
+    display: flex;
+    &__description {
+        width: 100%;
+        margin-bottom: 84px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-top: 80px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-top: 10px;
+            margin-bottom: 65px;
+        }
+    }
+    &__icons {
+        width: 100%;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-top: 70px;
+            width: 90%;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-top: 8px;
+            width: 80%;
+        }
+    }
+    @include mediaScreenMaxWidth($tablet-width) {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}

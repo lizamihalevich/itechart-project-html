@@ -1,0 +1,32 @@
+@import "./footer-summary.scss";
+@import "./footer-summary-item.scss";
+@import "./footer-summary-item-content.scss";
+@import "./footer-summary-item-list-of-icons.scss";
+@import "./footer-summary-item-form.scss";
+.footer {
+    background-color: #0d0d0d;
+    color: white;
+    font-family: $main-font-family;
+    &__summary {
+        width: 85%;
+        margin: auto;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 100%;
+        }
+    }
+    &__copyright {
+        text-align: center;
+        font-size: 22px;
+        font-weight: 200;
+        padding-bottom: 35px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            font-size: 58px;
+            padding-bottom: 70px;
+            padding-top: 345px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            padding-top: 180px;
+            font-size: 30px;
+        }
+    }
+}

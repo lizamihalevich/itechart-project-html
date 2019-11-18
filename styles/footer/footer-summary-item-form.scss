@@ -1,0 +1,33 @@
+.footer-summary-item-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 2px solid white;
+    &__input {
+        width: 260px;
+        text-align: center;
+        background-color: transparent;
+        border: none;
+        padding: 10px;
+        color: #fff;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 100%;
+            font-size: 65px;
+            padding: 15px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            font-size: 30px;
+            padding: 10px;
+        }
+    }
+    &__envelope {
+        width: 25px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 100px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            width: 55px;
+        }
+    }
+}

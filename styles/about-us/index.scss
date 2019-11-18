@@ -1,0 +1,22 @@
+@import "./about-us-borderline.scss";
+@import "./about-us-summary-content-icons-icon.scss";
+@import "./about-us-summary-content-icons.scss";
+@import "./about-us-small-panel-item.scss";
+@import "./about-us-small-panel.scss";
+@import "./about-us-summary-header.scss";
+@import "./about-us-summary-content-description-name-additional-info.scss";
+@import "./about-us-summary-content-description-name.scss";
+@import "./about-us-summary.scss";
+@import "./about-us-summary-content-description.scss";
+@import "./about-us-summary-content.scss";
+@import "./about-us-summary-content-icons-icon-circle.scss";
+.about-us {
+    display: flex;
+    font-family: $main-font-family;
+    &__summary {
+        margin-top: 125px;
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-top: 55px;
+        }
+    }
+}

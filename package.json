@@ -1,0 +1,25 @@
+{
+    "name": "itechart-project-html",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "parcel index.html",
+        "build": "parcel build index.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lizamihalevich/itechart-project-html.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/lizamihalevich/itechart-project-html/issues"
+    },
+    "homepage": "https://github.com/lizamihalevich/itechart-project-html#readme",
+    "devDependencies": {
+        "parcel-bundler": "^1.12.4",
+        "sass": "^1.23.1"
+    }
+}

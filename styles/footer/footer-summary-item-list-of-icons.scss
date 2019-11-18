@@ -1,0 +1,13 @@
+.footer-summary-item-list-of-icons {
+    display: flex;
+    justify-content: space-between;
+    &__icon {
+        width: 30px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 100px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            width: 50px;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.live-interaction-summary-btns-list {
+    display: flex;
+    &__btn {
+        padding: 17px 17px;
+        color: white;
+        border: 1px solid white;
+        background-color: transparent;
+        font-size: $header-btn-font-size-desktop;
+        @include mediaScreenMaxWidth($tablet-width) {
+            font-size: $header-btn-font-size-tablet;
+            padding: 12px 14px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            padding: 15px 17px;
+            font-size: $header-btn-font-size-mobile;
+        }
+        &:hover {
+            color: #318da4;
+            background-color: #e8e9ea;
+        }
+    }
+    &__merged {
+        display: flex;
+        margin-left: 55px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-left: 42px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-left: 58px;
+        }
+    }
+}

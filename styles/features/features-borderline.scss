@@ -1,0 +1,26 @@
+.features-borderline {
+    display: flex;
+    justify-content: center;
+    &__long {
+        width: 100px;
+        height: 6px;
+        margin-right: 22px;
+        border-radius: 5px;
+        background-color: $main-theme-color;
+        @include mediaScreenMaxWidth($mobile-width) {
+            width: 60px;
+            height: 5px;
+            margin-right: 8px;
+        }
+    }
+    &__short {
+        width: 10px;
+        height: 6px;
+        border-radius: 5px;
+        background-color: $main-theme-color;
+        margin-right: 140px;
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-right: 115px;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.live-interaction-phone {
+    &__image {
+        width: $phone-image-desktop-size;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: $phone-image-tablet-size;
+        }
+    }
+}

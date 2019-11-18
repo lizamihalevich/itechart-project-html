@@ -1,0 +1,13 @@
+.header-log-in {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    &__image {
+        padding: 0 10px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 24px;
+        }
+    }
+}

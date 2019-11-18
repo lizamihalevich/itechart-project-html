@@ -1,0 +1,48 @@
+@import "./header-burger-menu.scss";
+@import "./header-log-in.scss";
+@import "./header-logo.scss";
+@import "./header-navigation.scss";
+@import "./header-register.scss";
+@import "./header-authentication.scss";
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: #121111;
+    @include mediaScreenMaxWidth(975px) {
+        justify-content: space-between;
+    }
+    &__logo {
+        @include mediaScreenMaxWidth($tablet-width) {
+            display: none;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin: auto;
+            display: block;
+        }
+    }
+    &__nav-panel {
+        display: block;
+        flex-shrink: 0;
+        @include mediaScreenMaxWidth($tablet-width) {
+            display: flex;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            display: none;
+        }
+    }
+    &__authentication {
+        margin-left: 65px;
+        @include mediaScreenMaxWidth(975px) {
+            margin: 0;
+        }
+    }
+    &__menu-burger {
+        display: none;
+        @include mediaScreenMaxWidth($mobile-width) {
+            position: absolute;
+            top: 62px;
+            right: 48px;
+            display: block;
+        }
+    }
+}

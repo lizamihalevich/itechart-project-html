@@ -1,0 +1,23 @@
+.interaction-small-panel-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    padding: 20px;
+    transform: rotate(270deg) translateX(-125px) translateY(35px);
+    &__dot {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+    &__line {
+        width: 80px;
+        height: 2px;
+        background-color: #fff;
+    }
+    &__text {
+        font-size: 40px;
+        letter-spacing: 2px;
+        font-weight: 300;
+    }
+}

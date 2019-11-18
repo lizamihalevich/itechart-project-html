@@ -1,0 +1,20 @@
+.about-us-summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__content {
+        margin-top: 60px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-top: 75px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-top: 0;
+        }
+    }
+    &__header {
+        margin-left: 500px;
+        @include mediaScreenMaxWidth ($tablet-width) {
+            margin: auto;
+        }
+    }
+}

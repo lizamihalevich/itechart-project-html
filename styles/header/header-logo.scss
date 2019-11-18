@@ -1,0 +1,10 @@
+.header-logo {
+    &__logo-image {
+        width: 112px;
+        padding: 15px;
+        @include mediaScreenMaxWidth($mobile-width) {
+            width: 105px;
+            padding: 25px 0 43px 0;
+        }
+    }
+}

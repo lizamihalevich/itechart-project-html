@@ -1,0 +1,72 @@
+.events-summary-container-item-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px;
+    &__name {
+        color: #ffffff;
+        font-family: Lato;
+        font-size: 65px;
+        font-weight: 300;
+        text-transform: uppercase;
+        @include mediaScreenMaxWidth(1710px) {
+            font-size: 50px;
+        }
+        @include mediaScreenMaxWidth(1020px) {
+            font-size: 35px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            font-size: 65px;
+        }
+        @include mediaScreenMaxWidth(420px) {
+            font-size: 35px;
+        }
+    }
+    &__event {
+        color: #ffffff;
+        font-family: Lato;
+        font-size: 70px;
+        font-weight: 700;
+        text-transform: uppercase;
+        @include mediaScreenMaxWidth(1710px) {
+            font-size: 50px;
+        }
+        @include mediaScreenMaxWidth(1020px) {
+            font-size: 35px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            font-size: 65px;
+        }
+        @include mediaScreenMaxWidth(420px) {
+            font-size: 35px;
+        }
+    }
+    &_external {
+        background: url("../images/events-first-bg.png") no-repeat top center;
+        background-size: cover;
+        @include mediaScreenMaxWidth($mobile-width) {
+            background-image: none;
+        }
+    }
+    &_interactive {
+        background: url("../images/events-second-bg.png") no-repeat top center;
+        background-size: cover;
+        @include mediaScreenMaxWidth($mobile-width) {
+            background-image: none;
+        }
+    }
+    &_internal {
+        background: url("../images/events-third-bg.png") no-repeat top center;
+        background-size: cover;
+        @include mediaScreenMaxWidth($mobile-width) {
+            background-image: none;
+        }
+    }
+    @include mediaScreenMaxWidth($mobile-width) {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    @include mediaScreenMaxWidth(620px) {
+        flex-direction: column;
+    }
+}

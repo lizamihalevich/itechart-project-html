@@ -1,0 +1,15 @@
+.header-register {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    @include mediaScreenMaxWidth($tablet-width) {
+        font-size: 16px;
+    }
+    &__image {
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 24px;
+        }
+    }
+}

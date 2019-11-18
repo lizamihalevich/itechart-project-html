@@ -1,0 +1,28 @@
+@import "./header-log-in.scss";
+@import "./header-register.scss";
+.header-authentication {
+    flex-shrink: 0;
+    display: flex;
+    &__log-in {
+        cursor: pointer;
+        margin-right: 34px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            padding: 47px 0;
+        }
+        @include mediaScreenMaxWidth(975px) {
+            margin-right: 6px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            display: none;
+        }
+    }
+    &__register {
+        cursor: pointer;
+        @include mediaScreenMaxWidth($tablet-width) {
+            padding: 47px 0;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            display: none;
+        }
+    }
+}

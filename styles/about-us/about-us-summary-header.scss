@@ -1,0 +1,25 @@
+.about-us-summary-header {
+    text-align: center;
+    color: $main-theme-color;
+    font-family: $main-font-family;
+    font-weight: 300;
+    &__text {
+        font-size: 66px;
+        letter-spacing: 4px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            font-size: 50px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            font-size: 50px;
+        }
+    }
+    &__borderline {
+        margin-top: 12px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-top: 4px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-top: 6px;
+        }
+    }
+}

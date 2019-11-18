@@ -1,0 +1,28 @@
+@import "./how-it-works-header.scss";
+@import "./how-it-works-instruction.scss";
+@import "./how-it-works-instruction-item.scss";
+@import "./how-it-works-borderline.scss";
+@import "./how-it-works-instruction-summary.scss";
+.how-it-works {
+    &__header {
+        margin-top: 116px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-top: 34px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-top: 45px;
+        }
+    }
+    &__instruction {
+        margin-top: 100px;
+        margin-bottom: 120px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-top: 45px;
+            margin-bottom: 30px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-top: 55px;
+            margin-bottom: 45px;
+        }
+    }
+}

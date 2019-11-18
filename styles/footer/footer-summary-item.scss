@@ -1,0 +1,79 @@
+.footer-summary-item {
+    display: flex;
+    &__logo {
+        width: 120px;
+        margin-top: 95px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 225px;
+            margin-top: 160px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            width: 110px;
+            margin-top: 75px;
+        }
+    }
+    &__company-info {
+        width: 80%;
+        margin-top: 50px;
+        margin-bottom: 165px;
+        font-size: 22px;
+        line-height: 27px;
+        text-align: center;
+        font-weight: 200;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 75%;
+            margin-top: 75px;
+            font-size: 65px;
+            line-height: 85px;
+            margin-bottom: 165px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-top: 35px;
+            font-size: 32px;
+            line-height: 42px;
+            margin-bottom: 105px;
+        }
+    }
+    &__header {
+        font-size: 27px;
+        font-weight: 500;
+        margin: 190px 0 30px 0;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin: 85px 0 120px 0;
+            font-size: 80px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin: 35px 0 55px 0;
+            font-size: 40px;
+        }
+    }
+    &__list-of-icons {
+        width: 70%;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 60%;
+        }
+    }
+    &__subscribe {
+        margin: 30px 0;
+        font-size: 20px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin: 145px 0 100px 0;
+            font-size: 65px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin: 70px 0 45px 0;
+            font-size: 30px;
+        }
+    }
+    &__form {
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 70%;
+        }
+    }
+    &_hiding {
+        justify-content: center;
+        @include mediaScreenMaxWidth($mobile-width) {
+            display: none;
+        }
+    }
+}

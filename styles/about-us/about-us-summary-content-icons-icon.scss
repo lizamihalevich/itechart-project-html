@@ -1,0 +1,98 @@
+.about-us-summary-content-icons-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__number {
+        font-family: Lato;
+        font-size: 55px;
+        font-weight: 400;
+        margin-top: 25px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            font-size: 100px;
+            margin-top: 50px;
+        }
+        @include mediaScreenMaxWidth(1115px) {
+            font-size: 60px;
+            margin-top: 50px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            font-size: 45px;
+            margin-top: 20px;
+        }
+        @include mediaScreenMaxWidth(525px) {
+            font-size: 55px;
+        }
+        &_audience {
+            color: #4ca59a;
+        }
+        &_hours {
+            color: #f26250;
+        }
+        &_event {
+            color: #f0a765;
+        }
+    }
+    &__text {
+        font-size: 25px;
+        margin-top: 25px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            font-size: 50px;
+            margin-top: 60px;
+        }
+        @include mediaScreenMaxWidth(1115px) {
+            font-size: 30px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            font-size: 25px;
+            margin-top: 20px;
+        }
+        @include mediaScreenMaxWidth(525px) {
+            font-size: 30px;
+        }
+    }
+    &__line {
+        width: 180px;
+        height: 4px;
+        margin-top: 40px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 350px;
+            height: 5px;
+            margin-top: 80px;
+        }
+        @include mediaScreenMaxWidth(1115px) {
+            width: 230px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-top: 35px;
+            width: 155px;
+        }
+        @include mediaScreenMaxWidth(525px) {
+            width: 200px;
+        }
+        &_audience {
+            background-color: #4ca59a;
+        }
+        &_hours {
+            background-color: #f26250;
+        }
+        &_event {
+            background-color: #f0a765;
+        }
+    }
+    &__circle {
+        width: 75px;
+        height: 75px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 145px;
+            height: 145px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            width: 75px;
+            height: 75px;
+        }
+        @include mediaScreenMaxWidth(525px) {
+            width: 145px;
+            height: 145px;
+        }
+    }
+}

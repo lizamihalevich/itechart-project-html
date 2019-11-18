@@ -1,0 +1,8 @@
+.how-it-works-instruction-summary {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    &__item {
+        width: 250px;
+    }
+}

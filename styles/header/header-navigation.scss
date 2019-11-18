@@ -1,0 +1,39 @@
+.header-nav-panel {
+    @include mediaScreenMaxWidth(975px) {
+        width: initial;
+    }
+    &__menu {
+        display: flex;
+        height: 100%;
+        margin-left: 128px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            height: initial;
+            margin: 0;
+            justify-content: flex-end;
+        }
+    }
+    &__menu-item {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0px 20px;
+        color: #fff;
+        font-family: $main-font-family;
+        font-size: $menu-item-desktop-font-size;
+        @include mediaScreenMaxWidth($tablet-width) {
+            font-size: $menu-item-tablet-font-size;
+        }
+        @include mediaScreenMaxWidth(1040px) {
+            padding: 0px 10px;
+        }
+        @include mediaScreenMaxWidth(975px) {
+            padding: 0 4px;
+        }
+        &:hover {
+            box-sizing: border-box;
+            border-top: 2px solid white;
+            background-color: #161515;
+            font-weight: 600;
+        }
+    }
+}

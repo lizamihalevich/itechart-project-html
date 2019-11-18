@@ -1,0 +1,42 @@
+.interaction-summary {
+    &__header {
+        margin-top: 35px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-top: 165px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-top: 35px;
+        }
+    }
+    &__paragraph {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 45px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            font-size: 26px;
+            line-height: 35px;
+            width: 70%;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            width: initial;
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 0;
+        }
+        &_second {
+            @include mediaScreenMaxWidth($tablet-width) {
+                margin-bottom: 120px;
+            }
+            @include mediaScreenMaxWidth($mobile-width) {
+                margin-bottom: 22px;
+            }
+        }
+    }
+    @include mediaScreenMaxWidth($tablet-width) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

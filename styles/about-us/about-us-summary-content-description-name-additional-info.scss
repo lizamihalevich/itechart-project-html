@@ -1,0 +1,30 @@
+.about-us-summary-content-description-name-additional-info {
+    display: flex;
+    align-items: flex-end;
+    &__text {
+        color: $main-theme-color;
+        font-size: 35px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            font-size: 55px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            font-size: 25px;
+        }
+    }
+    &__line {
+        width: 320px;
+        height: 2px;
+        background-color: $main-theme-color;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-top: 30px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            width: 150px;
+            margin-top: 10px;
+        }
+    }
+    @include mediaScreenMaxWidth($tablet-width) {
+        flex-direction: column;
+        align-items: center;
+    }
+}

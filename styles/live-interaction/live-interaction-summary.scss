@@ -1,0 +1,109 @@
+.live-interaction-summary {
+    color: white;
+    font-family: $main-font-family;
+    &__header {
+        font-size: $main-header-font-size-desktop;
+        font-weight: 600;
+        @include mediaScreenMaxWidth($tablet-width) {
+            font-size: $main-header-font-size-tablet;
+            margin-left: 10px;
+        }
+        @include mediaScreenMaxWidth(1180px) {
+            font-size: 45px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin: auto;
+            font-size: $main-header-font-size-mobile;
+            text-align: center;
+        }
+    }
+    &__text {
+        margin-top: 32px;
+        font-size: $heading-text-font-size-desktop;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-top: 30px;
+            font-size: $heading-text-font-size-tablet;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin: 23px auto;
+            font-size: $heading-text-font-size-mobile;
+            text-align: center;
+        }
+    }
+    &__borderline {
+        display: flex;
+        margin-top: 16px;
+        margin-left: 600px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-top: 12px;
+            margin-left: 480px;
+        }
+        @include mediaScreenMaxWidth(1180px) {
+            margin: 15px 75px 0 0;
+            align-self: flex-end;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-top: 5px;
+            margin-right: 90px;
+        }
+        @include mediaScreenMaxWidth(600px) {
+            align-self: center;
+            margin-right: 0;
+        }
+    }
+    &__borderline-small {
+        width: 10px;
+        height: 10px;
+        margin-right: 22px;
+        border-radius: 50%;
+        background-color: white;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 9px;
+            height: 8px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            height: 6px;
+            margin-right: 14px;
+        }
+    }
+    &__borderline-middle {
+        width: 19px;
+        height: 10px;
+        margin-right: 11px;
+        border-radius: 5px;
+        background-color: white;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 15px;
+            height: 8px;
+            margin-right: 8px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            width: 16px;
+            height: 6px;
+            margin-right: 11px;
+        }
+    }
+    &__borderline-big {
+        width: 270px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: white;
+        @include mediaScreenMaxWidth($tablet-width) {
+            width: 218px;
+            height: 8px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            width: 176px;
+            height: 6px;
+        }
+    }
+    &__btns-list {
+        margin-top: 206px;
+        @include mediaScreenMaxWidth($tablet-width) {
+            margin-top: 165px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin: 45px auto;
+        }
+    }
+}

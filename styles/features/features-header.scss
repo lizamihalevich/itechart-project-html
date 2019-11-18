@@ -1,0 +1,19 @@
+.features-header {
+    text-align: center;
+    color: $main-theme-color;
+    font-family: $main-font-family;
+    font-weight: 300;
+    &__text {
+        font-size: 66px;
+        letter-spacing: 4px;
+        @include mediaScreenMaxWidth($mobile-width) {
+            font-size: 45px;
+        }
+    }
+    &__borderline {
+        margin-top: 12px;
+        @include mediaScreenMaxWidth($mobile-width) {
+            margin-top: 7px;
+        }
+    }
+}

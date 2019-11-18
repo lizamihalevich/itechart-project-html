@@ -1,0 +1,6 @@
+.about-us-small-panel {
+    flex-shrink: 0;
+    @include mediaScreenMaxWidth($tablet-width) {
+        display: none;
+    }
+}

@@ -1,0 +1,43 @@
+.features-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 2px;
+        height: 135px;
+        background-color: #037693;
+        @include mediaScreenMaxWidth($tablet-width) {
+            content: none;
+        }
+        ;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: -25px;
+        height: 2px;
+        width: 320px;
+        background-color: #037693;
+        @include mediaScreenMaxWidth($tablet-width) {
+            top: -50px;
+            width: 420px;
+        }
+        @include mediaScreenMaxWidth(845px) {
+            width: 350px;
+        }
+        @include mediaScreenMaxWidth($mobile-width) {
+            top: -5px;
+            width: 220px;
+        }
+        @include mediaScreenMaxWidth(400px) {
+            width: 90px;
+        }
+    }
+    &__container {
+        width: 70%;
+    }
+}
